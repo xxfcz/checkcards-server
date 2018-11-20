@@ -21,10 +21,10 @@ let initDb = async (force = true) => {
       name: '衡阳东高铁供电车间'
     })
 
-    await CardType.create({
-      id: 1,
-      name: '接触网作业检查卡'
-    })
+    await CardType.create({ id: 1, name: '接触网作业检查卡' })
+    await CardType.create({ id: 2, name: '接触网配合施工作业检查卡' })
+    await CardType.create({ id: 3, name: '变配电作业跟班检查卡' })
+    await CardType.create({ id: 4, name: '电力作业跟班检查卡' })
 
     let ciid = 1
     for (let i = 1; i <= 6; i++) {
